@@ -1,0 +1,80 @@
+html{
+	scroll-behavior:smooth; 
+}
+*{
+	margin:0px;
+	padding:0px; 
+}
+body{
+	//background:linear-gradient(to right,#3a6186,#89253e);
+	background:linear-gradient(to right,#F57F17,#38A4BC);
+	font-family:sans; 
+}
+.navbar{
+	text-align: center;
+	padding:30px;
+	font-size:1.1em;
+	word-spacing:50px;
+	background:transparent;     
+}
+.navbar p{
+	float:left;
+	font-size:1.2em;  
+}
+.navbar p1{
+	float:right;
+	background:transparent;  
+}
+.navbar a{
+	text-decoration:none;
+	color:black; 
+}
+.enquiry{
+	min-height:550px;
+	width:95%;
+	margin-left:30px; 
+	//border:1px solid black;
+}
+input{
+	background:transparent;  
+}
+input[type=text]
+{   
+	padding:10px; 
+	width:476px;
+	margin-top:230px; 
+	margin-left:390px;
+	//background:transparent;
+	border:none;
+	color:black;
+	border-bottom:1px solid black;   
+}
+.enquiry select{
+    padding:10px;
+    width:500px;
+    margin-left:390px;
+    margin-top:20px; 
+    background:transparent;
+    border:none;
+    border-bottom:1px solid black;      
+}
+select option{
+	background:grey;
+	color:white; 
+}
+button{
+	margin-top:40px;
+	margin-left:600px;
+	padding:15px;
+	background:transparent;
+	border:none;
+	border-radius:5px;   
+}
+a{
+	text-decoration:none; 
+}
+button:hover{
+	cursor:pointer; 
+	background:black;
+	color:white;  
+}

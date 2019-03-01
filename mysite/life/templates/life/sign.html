@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<link rel="icon" href="deena.png" type="image/gif" sizes="">
+	<title>Register - Lifesaver</title>
+	<link rel="stylesheet" href="sign.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+</head>
+<body>
+    <a href="life.html"><i class="fa fa-times fa-2x"></i></a>
+    <h1> Create Account </h1>
+    <p> Already have an account?<a href="login.html"> Log in </a> </p>
+	<div class="box">
+		<form method="post" action="sign.php">
+			<input type="text" name="name" placeholder="Username" required>
+			<input type="text" name="city" placeholder="City" required>
+			<input type="email" name="email" placeholder="Email" required>
+			<input type="tel" name="mobile" placeholder="Phone" required> </br>
+			<select name="group1" required>
+				        <option value="a">   </option>
+                        <option value="O+"> O+ </option>
+                        <option value="O-"> O- </option>
+                        <option value="A+"> A+ </option>
+                        <option value="A-"> A-</option>
+                        <option value="B+"> B+ </option>
+                        <option value="B-"> B- </option>
+                        <option value="AB+"> AB+ </option>                    
+                        <option value="AB-"> AB- </option>
+			</select> </br>
+			<input type="password" name="password" placeholder="Password" required>
+			<p1> By creating an account, you agree to </p1> </br>
+			<p2> our <a href="#">Terms of Service and have read and </a></p2> </br>
+			<p3> understood <a href="#">the Privacy Policy </a></p3>
+		</br></br>
+			<input type="submit" value="Create Account">
+		</form>
+	</div>
+</body>
+</html>

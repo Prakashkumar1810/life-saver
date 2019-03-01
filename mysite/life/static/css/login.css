@@ -1,0 +1,87 @@
+body{
+	padding:0px;
+	margin:0px;
+	//background:linear-gradient(to right,#3a6186,#89253e);
+    background:linear-gradient(to right,#F57F17,#38A4BC); 
+	//font-family:Agency FB;    
+}
+h1{
+	font-family:Agency FB;  
+	color:black;
+	font-size:2.5em;
+	margin-bottom:20px;  
+	//text-align:center;
+	margin-left:560px;  
+	margin-top:100px;   
+}
+p1{
+	font-family:sans-serif; 
+	color:black; 
+    margin-left:610px;  
+}
+p1 a{
+	color:black; 
+}
+.box{
+	margin-top:30px;
+	margin-left:auto;
+	margin-right:auto;
+	height:400px;
+	width:300px;
+	//border:2px solid #7c0d09;   
+}
+input{
+	margin:0px;
+	padding:0px;
+	background:transparent;
+	border:none;
+	border-bottom:1px solid black;  
+	color:black; 
+}
+input[type="email"]
+{
+	width:89%;
+	padding:15px;  
+}
+input[type="password"]
+{
+	width:89%;
+	padding:15px; 
+	margin-bottom: 30px; 
+}
+button
+{
+	width:100%;
+	padding:15px; 
+	font-size:1em;
+	background:transparent;   
+	border:none;
+	border-radius:5px;
+	display:block;  
+}
+a{
+	text-decoration:none; 
+}
+button:hover{
+	cursor:pointer;
+	background:black;
+	color:white;  
+}
+p{
+	margin-top:30px; 
+	text-align: center;
+	color:black;
+}
+p2{
+	color:black; 
+	margin-left:55px; 
+}
+p2 a{
+	color:black;
+	text-decoration:; 
+}
+i{
+	color:black;
+	margin-top:5px; 
+	margin-left:97%; 
+}
