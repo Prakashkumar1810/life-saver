@@ -1,0 +1,116 @@
+*{
+	margin:0px;
+	padding:0px;  
+}
+body{
+	//background:linear-gradient(to right,#3a6186,#89253e);
+	 background:linear-gradient(to right,#F57F17,#38A4BC); 
+}
+h1{
+	font-family:Agency FB;  
+	color:black;
+	font-size:2.5em;
+	margin-left:570px;
+	margin-top:100px;
+	margin-bottom:20px;    
+}
+p{
+	margin-left:560px;
+	font-family:sans-serif; 
+	color:black;
+}
+p a{
+	color:black;  
+	text-decoration:none; 
+}
+.box{
+	margin-left:auto;
+	margin-right:auto;
+	margin-top:30px;   
+	height:500px;
+	width:300px;
+    //border:1px solid #7c0d09; 
+}
+input{
+	margin:0px;
+	padding:0px;
+	background:transparent;
+	border:none;
+    border-bottom:1px solid black;  
+	color:black; 
+}
+input[type="text"]
+{
+	width:90%;
+	padding:15px;  
+}
+input[type="tel"]
+{
+	width:90%;
+	padding:15px;  
+}
+input[type="email"]
+{
+	width:90%;
+	padding:15px;  
+}
+select
+{
+	border:none;
+	border-bottom:1px solid black; 
+	background:transparent; 
+	width:100%;
+	padding:15px;  
+	color:black;
+}
+select option{
+	color:black; 
+	background:grey;
+}
+input[type="password"]
+{
+	width:90%;
+	padding:15px;
+	margin-bottom: 30px; 
+}
+input[type=submit]
+{
+	width:100%;
+	padding:15px; 
+	font-size:1em;
+	background:transparent;   
+	border:none;
+	border-radius:5px;
+	display:block;  
+}
+input[type=submit]:hover{
+	cursor:pointer;
+	background:black;
+	color:white;  
+}
+p1{
+	color:black;
+	margin-left:27px;  
+}
+p2{
+	color:black;
+	margin-left:15px; 
+}
+p2 a{
+	color:black;
+	text-decoration:none; 
+}
+p3{
+	color:black;
+	margin-left:42px;
+	margin-bottom:20px;  
+}
+p3 a{
+	color:black;
+	text-decoration:none; 
+}
+i{
+	color:black;
+	margin-top:5px; 
+	margin-left:97%; 
+}
