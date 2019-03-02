@@ -26,4 +26,5 @@ urlpatterns = [
     path('search',views.search,name='search'),
     path('sign',views.sign,name='sign'),
     path('get_in',views.get_in,name='get_in'),
+    path('create_acc',views.create_acc,name='create_acc'),
 ]

@@ -16,13 +16,14 @@
     <h1> Create Account </h1>
     <p> Already have an account?<a href="login"> Log in </a> </p>
 	<div class="box">
-		<form method="post" action="sign.php">
+		<form action="create_acc" method="post">
+			{% csrf_token %}
 			<input type="text" name="name" placeholder="Username" required>
 			<input type="text" name="city" placeholder="City" required>
 			<input type="email" name="email" placeholder="Email" required>
 			<input type="tel" name="mobile" placeholder="Phone" required> </br>
 			<select name="group1" required>
-				        <option value="a">   </option>
+				        <option value="A">   </option>
                         <option value="O+"> O+ </option>
                         <option value="O-"> O- </option>
                         <option value="A+"> A+ </option>
