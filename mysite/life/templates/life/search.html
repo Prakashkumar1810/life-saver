@@ -3,23 +3,25 @@
 <head>
 	<meta charset="utf-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
-	<link rel="icon" href="deena.png" type="image/gif" sizes="">
+	{% load staticfiles %}
+	<link rel="icon" href="{% static 'images/deena.png' %}" type="image/gif" sizes="">
 	<title>Search</title>
-	<link rel="stylesheet" href="search.css">
+	{% load staticfiles %}
+	<link rel="stylesheet" href="{% static 'css/search.css' %}">
 </head>
 <body>
 	<div class="navbar">
-	         <p> <a href="life.html">LIFESAVER</a> </p>	 
-	        <a href="search.html">Search</a>
-			<a href="about.html">Info</a>
-			<a href="contact.html">Contact</a>
-			<p1> <a href="login.html"> Logout </a></p1>
+	         <p> <a href="life">LIFESAVER</a> </p>	 
+	        <a href="search">Search</a>
+			<a href="about">Info</a>
+			<a href="contact">Contact</a>
+			<p1> <a href="login"> Logout </a></p1>
 		</div>
 		<div class="enquiry">
 			<form>
 		    <input type="text" placeholder="City" required> </br>
 			<select required>
-				        <option value="a">  </option>
+				        <option value="A">  </option>
                         <option value="O+"> O+ </option>
                         <option value="O-"> O- </option>
                         <option value="A+"> A+ </option>

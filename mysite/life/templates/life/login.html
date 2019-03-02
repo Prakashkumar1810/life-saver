@@ -3,19 +3,21 @@
 <head>
 	<meta charset="utf-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
-	<link rel="icon" href="deena.png" type="image/gif" sizes="">
+	{% load staticfiles %}
+	<link rel="icon" href="{% static 'images/deena.png' %}" type="image/gif" sizes="">
 	<title>Login - Lifesaver</title>
-	<link rel="stylesheet" href="login.css">
+	{% load staticfiles %}
+	<link rel="stylesheet" href="{% static 'css/login.css' %}">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
 <body>
-    <a href="life.html"><i class="fa fa-times fa-2x"></i></a>
+    <a href="life"><i class="fa fa-times fa-2x"></i></a>
 	<h1> Log into Lifesaver </h1>
-	<p1> Or  <a href="sign.html">  Create Account </a> </p1>
+	<p1> Or  <a href="sign">  Create Account </a> </p1>
 	<div class="box">
-	 <form action="life.html" method="POST">
-	 	<input type="email" placeholder="Email Address" required>
-	 	<input type="password" placeholder="Password" required>
+	 <form action="get_in" method="POST">{% csrf_token %}
+	 	<input type="email" placeholder="Email Address" required name="email">
+	 	<input type="password" placeholder="Password" required name="password">
 	    <a href="#"> <button type="submit" value="Log In"> Log In </button> </a>
 		</form>
 		<p>Secure Login with reCAPTCHA subject to </p> 

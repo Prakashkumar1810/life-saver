@@ -3,24 +3,29 @@
 <head>
 	<meta charset="utf-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
-	<link rel="icon" href="deena.png" type="image/gif" sizes="">
+	{% load staticfiles %}
+	<link rel="icon" href="{% static 'images/deena.png' %}" type="image/gif" sizes="">
 	<title>Contact</title>
-	<link rel="stylesheet" href="contact.css">
+	{% load staticfiles %}
+	<link rel="stylesheet" href="{% static 'css/contact.css' %}">
 </head>
 <body>
-	<script src="contact.js" type="text/javascript" charset="utf-8" async defer></script>
+	{% load staticfiles %}
+	<script src="{% static 'js/contact.js' %}" type="text/javascript" charset="utf-8" async defer></script>
 	<div class="navbar">
-	         <p> <a href="life.html">LIFESAVER</a> </p>	 
-	        <a href="search.html">Search</a>
-			<a href="about.html">Info</a>
-			<a href="contact.html">Contact</a>
-			<p1> <a href="login.html"> Logout </a></p1>
+	         <p> <a href="life">LIFESAVER</a> </p>	 
+	        <a href="search">Search</a>
+			<a href="about">Info</a>
+			<a href="contact">Contact</a>
+			<p1> <a href="login"> Logout </a></p1>
 		</div>
 		<a href="#" id="img"><div class="img1">
-			<img src="img4.jpg">
+			{% load staticfiles %}
+			<img src="{% static 'images/img4.jpg' %}">
 		</div></a>
 		<a href="#" id="img1"><div class="img2">
-			<img src="img3.jpg">
+			{% load staticfiles %}
+			<img src="{% static 'images/img3.jpg' %}">
 		</div></a>
 		<div class="infod">
 			<div class="info1">

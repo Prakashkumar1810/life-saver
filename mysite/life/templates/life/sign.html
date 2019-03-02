@@ -3,16 +3,18 @@
 <head>
 	<meta charset="utf-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
-	<link rel="icon" href="deena.png" type="image/gif" sizes="">
+	{% load staticfiles %}
+	<link rel="icon" href="{% static 'images/deena.png' %}" type="image/gif" sizes="">
 	<title>Register - Lifesaver</title>
-	<link rel="stylesheet" href="sign.css">
+	{% load staticfiles %}
+	<link rel="stylesheet" href="{% static 'css/sign.css' %}">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
 </head>
 <body>
-    <a href="life.html"><i class="fa fa-times fa-2x"></i></a>
+    <a href="life"><i class="fa fa-times fa-2x"></i></a>
     <h1> Create Account </h1>
-    <p> Already have an account?<a href="login.html"> Log in </a> </p>
+    <p> Already have an account?<a href="login"> Log in </a> </p>
 	<div class="box">
 		<form method="post" action="sign.php">
 			<input type="text" name="name" placeholder="Username" required>
