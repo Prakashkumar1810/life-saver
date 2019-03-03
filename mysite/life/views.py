@@ -2,7 +2,8 @@ from django.shortcuts import render
 from django.http import HttpResponse
 from .dbms import account
 # Create your views here.
-
+global data
+data = {}
 
 def life(request):
 	return render(request,'life/life.html')
@@ -23,7 +24,7 @@ def sign(request):
 	return render(request,'life/sign.html')
 
 def get_in(request):
-	data = {}
+	#data = {}
 	if request.method == 'POST':
 		data['phone'] = request.POST.get('phone')
 		data['password'] = request.POST.get('password')
@@ -47,3 +48,18 @@ def create_acc(request):
 		return render(request,'life/dashboard.html',data)
 	else:
 		return HttpResponse("<h1>signup failed</h1>")
+
+def update_date(request):
+	if request.method == 'POST':
+		data['day'] = request.POST.get('day')
+	
+	if account.update_date(data):
+		return HttpResponse('<h1>Date updated successfully</h1><p><a href="login"><button type="button">Go back</button></a></p>')
+	else:
+		return HttpResponse('<h1>Update failed</h1><p><a href="login"><button type="button">Go back</button></a></p>')
+
+def delete(request):
+	if account.delete(data):
+		return HttpResponse('<h1>Account deleted successfully</h1><p><a href="life"><button type="button">Home</button></a></p>')
+	else:
+		return HttpResponse('<h1>Deletion failed</h1><p><a href="life"><button type="button">Home</button></a></p>')

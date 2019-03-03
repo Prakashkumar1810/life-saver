@@ -1,6 +1,4 @@
 #imports
-from django.shortcuts import render
-from django.http import HttpResponse
 import pymysql
 #functions
 
@@ -26,7 +24,7 @@ def log_in(data):
 	connection = pymysql.connect("localhost","root","helloworld","lifesaver")
 	cursor = connection.cursor()
 	
-	query = "SELECT phone,name,password from donors where phone='{}'".format(data['phone'])
+	query = "SELECT phone,name,password from donors where phone='{}';".format(data['phone'])
 	
 	try:
 		cursor.execute(query)
@@ -39,6 +37,42 @@ def log_in(data):
 	except Exception as e:
 		flag = False
 		print(e)
+	
+	connection.close()
+	return flag
+
+def update_date(data):
+	connection = pymysql.connect("localhost","root","helloworld","lifesaver")
+	cursor = connection.cursor()
+	
+	query = "UPDATE donors SET lastdonation = '{}' WHERE phone = '{}'".format(data['day'],data['phone'])
+	
+	try:
+		cursor.execute(query)
+		connection.commit()
+		flag = True
+	except Exception as e:
+		connection.rollback()
+		print(e)
+		flag = False
+	
+	connection.close()
+	return flag
+
+def delete(data):
+	connection = pymysql.connect("localhost","root","helloworld","lifesaver")
+	cursor = connection.cursor()
+	
+	query = "DELETE FROM donors WHERE phone = '{}'".format(data['phone'])
+	
+	try:
+		cursor.execute(query)
+		connection.commit()
+		flag = True
+	except Exception as e:
+		connection.rollback()
+		print(e)
+		flag = False
 	
 	connection.close()
 	return flag

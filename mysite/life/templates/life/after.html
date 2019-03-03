@@ -22,10 +22,14 @@
 			<p1> <a href="life"><i class="fa fa-times fa-2x"></i></a></p1>
 		</div>
 		<div class="mid">
-		<form action="" method="" accept-charset="utf-8">
-			<p3> LAST DONATE </p3> </br>
-			<input type="tel"> <input type="submit" id="enter" value="Enter"></br>
-			<input type="submit" id="del" value="Delete">
+		<form action="update_date" method="POST" accept-charset="utf-8">
+			{% csrf_token %}
+			<p3> LAST DONATION </p3> </br>
+			<input type="text" name="day" placeholder="YYYY-MM-DD"> <input type="submit" id="enter" value="Update"></br>
+		</form>
+		<form action="delete" method="POST" accept-charset="utf-8">
+			{% csrf_token %}
+			<input type="submit" id="del" value="Delete Account">
 		</form>
 	</div>
 </body>
