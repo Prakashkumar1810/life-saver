@@ -23,12 +23,15 @@ def sign(request):
 	return render(request,'life/sign.html')
 
 def get_in(request):
-	c = {}
+	data = {}
 	if request.method == 'POST':
-		c['email'] = request.POST.get('email')
-		c['password'] = request.POST.get('password')
+		data['phone'] = request.POST.get('phone')
+		data['password'] = request.POST.get('password')
 	
-	return render(request,'#',c)
+	if account.log_in(data):
+		return render(request,'life/after.html',data)
+	else:
+		return HttpResponse("<h1>Log in failed</h1><p>Check username and password</p>")
 
 def create_acc(request):
 	data = {}

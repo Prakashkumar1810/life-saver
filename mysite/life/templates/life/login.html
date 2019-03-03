@@ -5,6 +5,7 @@
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	{% load staticfiles %}
 	<link rel="icon" href="{% static 'images/deena.png' %}" type="image/gif" sizes="">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<title>Login - Lifesaver</title>
 	{% load staticfiles %}
 	<link rel="stylesheet" href="{% static 'css/login.css' %}">
@@ -15,10 +16,11 @@
 	<h1> Log into Lifesaver </h1>
 	<p1> Or  <a href="sign">  Create Account </a> </p1>
 	<div class="box">
-	 <form action="get_in" method="POST">{% csrf_token %}
-	 	<input type="email" placeholder="Email Address" required name="email">
-	 	<input type="password" placeholder="Password" required name="password">
-	    <a href="#"> <button type="submit" value="Log In"> Log In </button> </a>
+	 <form action="get_in" method="POST">
+	 	{% csrf_token %}
+	 	<input type="tel" name="phone" placeholder="Phone" required>
+	 	<input type="password" name="password" placeholder="Password" required>
+	    <a href="after"> <button type="submit" value="Log In"> Log In </button> </a>
 		</form>
 		<p>Secure Login with reCAPTCHA subject to </p> 
 	        <p2> Lifesaver <a href="#">Terms</a> & <a href="#">Privacy</a> </p2>

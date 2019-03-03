@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	{% load staticfiles %}
+	<link rel="icon" href="{% static 'images/deena.png' %}" type="image/gif" sizes="">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Update</title>
+	{% load staticfiles %}
+	<link rel="stylesheet" href="{% static 'css/after.css' %}">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+		<div class="navbar">
+	         <p> <div class="log"> <a href="#"> 
+	         	{% load staticfiles %}
+	         	<img src="{% static 'images/user.png' %}">  {{ name }} </a></div> </p>	 
+	        <a href="search">Search</a>
+			<a href="about">Info</a>
+			<a href="contact">Contact</a>
+			<p1> <a href="life"><i class="fa fa-times fa-2x"></i></a></p1>
+		</div>
+		<div class="mid">
+		<form action="" method="" accept-charset="utf-8">
+			<p3> LAST DONATE </p3> </br>
+			<input type="tel"> <input type="submit" id="enter" value="Enter"></br>
+			<input type="submit" id="del" value="Delete">
+		</form>
+	</div>
+</body>
+</html>

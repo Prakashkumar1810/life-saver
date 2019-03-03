@@ -1,0 +1,43 @@
+*{
+	margin:0px;
+	padding:0px; 
+}
+body{
+	 background:linear-gradient(to right,#F57F17,#38A4BC);
+	font-family:sans; 
+}
+.navbar{
+	text-align: center;
+	padding:30px; 
+	font-size:1.1em;
+	word-spacing:50px;
+	background:transparent;
+	position: -webkit-sticky;     
+	position:sticky; 
+}
+.navbar p{
+	float:left;
+	font-size:1.2em;  
+}
+.navbar p1{
+	float:right;
+	background:transparent; 
+	margin-top:-14px; 
+}
+.navbar a{
+	text-decoration:none;
+	color:black; 
+}
+.log{
+	height:50px;
+	width:50px;
+	float:left; 
+	margin-top:-10px;
+	margin-left:-10px;  
+	border-radius:50%;
+	border:1px solid black;  
+}
+.log img{
+	height:100%;
+	width:100%;  
+}

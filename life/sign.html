@@ -3,29 +3,26 @@
 <head>
 	<meta charset="utf-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
-	{% load staticfiles %}
-	<link rel="icon" href="{% static 'images/deena.png' %}" type="image/gif" sizes="">
+	<link rel="icon" href="deena.png" type="image/gif" sizes="">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<title>Register - Lifesaver</title>
-	{% load staticfiles %}
-	<link rel="stylesheet" href="{% static 'css/sign.css' %}">
+	<link rel="stylesheet" href="sign.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
 </head>
 <body>
 	<div class="main">
-    <a href="life"><i class="fa fa-times fa-2x"></i></a>
+    <a href="life.html"><i class="fa fa-times fa-2x"></i></a>
     <h1> Create Account </h1>
     <p> Already have an account?<a href="login.html"> Log in </a> </p>
 	<div class="box">
-		<form method="post" action="create_acc">
-			{% csrf_token %}
+		<form method="post" action="sign.php">
 			<input type="text" name="name" placeholder="Username" required>
 			<input type="text" name="city" placeholder="City" required>
 			<input type="email" name="email" placeholder="Email" required>
 			<input type="tel" name="mobile" placeholder="Phone" required> </br>
-			<select name="group1" required placeholder="Blood group">
-				        <option value="A">   </option>
+			<select name="group1" required>
+				        <option value="a">   </option>
                         <option value="O+"> O+ </option>
                         <option value="O-"> O- </option>
                         <option value="A+"> A+ </option>
